@@ -4,6 +4,7 @@ html {
   background-color: hsl(217, 54%, 11%);
   margin: 0;
   padding: 0;
+  color: hsl(215, 51%, 70%);
 }
 
 /* Body Component
@@ -64,6 +65,22 @@ main .creator img {
 
 main p span {
   color: hsl(0, 0%, 100%);
+}
+
+/* Hover interaction
+--------------------------------------- */
+main h3:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+main p span:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+main img:hover {
+  background-image: url("/images/icon-view.svg");
+  position: relative;
+  z-index: 1;
 }
 
 /* Bottom Footer
