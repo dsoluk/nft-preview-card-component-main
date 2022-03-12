@@ -14,11 +14,12 @@ body {
   font-size: 18px;
   display: flex;
   flex-direction: column;
+  /* place-content: center; */
   align-items: center;
   justify-content: center;
   min-height: 100vh;
   box-sizing: border-box;
-  margin: auto;
+  margin: 0;
 }
 
 main {
@@ -27,28 +28,91 @@ main {
   padding: 20px;
   border-radius: 10px;
   color: hsl(215, 51%, 70%);
+  position: relative;
 }
 
-button {
-  background-color: hsl(178, 100%, 50%);
-  margin: 0;
-  padding: 0;
-}
+/* For the picture (Equilibrium in this case)
+---------------------------------------------- */
 
-button img {
+main a img {
+  /* background-color: hsl(178, 100%, 50%); */
+  /* margin: 0; */
+  /* padding: 0; */
+  max-width: 100%;
+  border-radius: 15px;
   display: block;
   position: relative;
-  max-width: 100%;
-  border-radius: 5px;
 }
 
-button img::before {
-  background-image: url("/images/icon-view.svg");
-  background-color: hsl(178, 100%, 50%);
-  opacity: 0;
+/* Position both images in same place */
+/* img {
+  border-radius: 15px;
+  max-width: 100%;
+  position: relative;
+  transition: 0.5s ease; 
+} */
+
+main a img::after {
+  content: "";
+  position: relative;
+  top: 0;
+  left: 0;
+  /* transform: translate(-50%, -50%); */
+  /* background-color: rgb(0 255 255 / 60%); */
+  /* background-color: #00fff7; */
+  /* background-color: hsl(178, 100%, 50%); */
+  /* background-image: url(/images/icon-view.svg); */
+  /* background: linear-gradient(hsl(178, 100%, 50%), url(/images/icon-view.svg)); */
+  /* transition: .5s ease; */
+  /* opacity: 0; */
+  border-radius: 15px;
   width: 100%;
-  border-radius: 12px;
+  height: 100%;
+  opacity: 1;
+  /* z-index: -1; */
+  display: block;
+
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+
+main a img:hover {
+  opacity: 0.4;
+}
+
+/* a::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../img/icon-view.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+  transition: ease 0.3s;
+} */
+
+/* a .eye_pic {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+} */
+
+/* a:hover::before {
+  opacity: 0.5;
+}
+
+/* a:hover::after {
+  opacity: 1;
+  z-index: 0;
+} */
+
+/* Text in middle section
+---------------------------------------------- */
 
 main h3 {
   color: hsl(0, 0%, 100%);
@@ -93,16 +157,6 @@ main h3:hover {
 
 main p span:hover {
   color: hsl(178, 100%, 50%);
-}
-
-/* button:hover {
-  opacity: 0.7;
-} */
-
-button img:hover {
-  opacity: 0.5;
-  background-image: url("/images/icon-view.svg");
-  /* z-index: 0; */
 }
 
 /* Bottom Footer
