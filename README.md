@@ -41,7 +41,7 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- Advanced Selector ( ~ )
+- Advanced Selector / Combinator ( ~ )
 - Interactive (hover)
 - image handling (multiply)
 
@@ -55,7 +55,7 @@ Need to spend some time on pseudo elements (e.g. ::before) and working with imag
 
 ### Useful resources
 
-Worked mostly from MDN and W3 school articles.
+Worked mostly from MDN and W3 school articles.  And, tried various code combinations using CodePen.
 
 ## Author
 
@@ -63,4 +63,4 @@ Worked mostly from MDN and W3 school articles.
 
 ## Acknowledgments
 
-I'd like to acknowledge Carlton Mpofu who's solution was extremely helpful in making sense of the hover interaction of the equilibrium image. I tried for a day to get my own solution but struggled mightily. Then looked at several other solutions which I couldn't wrap my head around but Carlton's made sence. In addition, the feedback by Grace was very helpful.
+I'd like to acknowledge Carlton Mpofu who's solution was extremely helpful in making sense of the hover interaction of the equilibrium image. I tried for a day to get my own solution but struggled mightily. Then looked at several other solutions which I couldn't wrap my head around but Carlton's made sense. In addition, the feedback by Grace was very helpful.
