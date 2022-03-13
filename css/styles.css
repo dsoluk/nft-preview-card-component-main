@@ -26,9 +26,40 @@ main {
   color: hsl(215, 51%, 70%);
 }
 
-main img {
+img {
+  display: block;
+  object-fit: cover;
+}
+
+.image-container {
+  position: relative;
+  border-radius: 8px;
+}
+
+.image-container:hover {
+  background-color: hsl(178, 100%, 50%);
+}
+
+.image-equilibrium {
   width: 100%;
-  border-radius: 12px;
+  border-radius: 8px;
+}
+
+.image-equilibrium:hover {
+  mix-blend-mode: multiply;
+  opacity: 0.5;
+}
+
+.image-equilibrium:hover ~ .image-icon-view {
+  display: block;
+}
+
+.image-icon-view {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 main h3 {
